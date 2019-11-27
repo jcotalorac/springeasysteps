@@ -16,8 +16,7 @@
 			<value>Global Hospital</value>
 		</property>
 		<property name="departments">
-			<list>
-			</list>
+			<value>Front Office</value>
 		</property>
 	</bean>
 </beans>
