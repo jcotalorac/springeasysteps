@@ -19,7 +19,7 @@
 			<set>
 				<value>Honda</value>
 				<value>BMW</value>
-				<value>Honda</value>
+				<value>Hyundai</value>
 			</set>
 		</property>
 	</bean>
