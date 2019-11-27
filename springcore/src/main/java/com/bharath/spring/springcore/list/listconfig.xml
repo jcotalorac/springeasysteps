@@ -17,9 +17,6 @@
 		</property>
 		<property name="departments">
 			<list>
-				<value>Front Office</value>
-				<value>In Patient</value>
-				<value>Out Patient</value>
 			</list>
 		</property>
 	</bean>
