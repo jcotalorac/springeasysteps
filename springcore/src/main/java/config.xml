@@ -8,8 +8,6 @@
 	http://www.springframework.org/schema/context
 	http://www.springframework.org/schema/context/spring-context.xsd">
 
-	<bean name="emp" class="com.bharath.spring.springcore.Employee">
-		<property name="id" value="20" />
-		<property name="name" value="Bharath" />
-	</bean>
+	<bean name="emp" class="com.bharath.spring.springcore.Employee"
+		p:id="20" p:name="Bharath" />
 </beans>
