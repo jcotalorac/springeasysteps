@@ -16,11 +16,7 @@
 			<value>HyderAbad Dealer</value>
 		</property>
 		<property name="models">
-			<set>
-				<value>Honda</value>
-				<value>BMW</value>
-				<value>Hyundai</value>
-			</set>
+			<value>Honda</value>
 		</property>
 	</bean>
 </beans>
