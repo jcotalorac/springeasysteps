@@ -13,7 +13,6 @@
 		class="com.bharath.spring.springcore.reftypes.Scores" p:maths="80"
 		p:physics="90" p:chemistry="78" />
 	<bean name="student"
-		class="com.bharath.spring.springcore.reftypes.Student">
-		<property name="scores" ref="scores" />
-	</bean>
+		class="com.bharath.spring.springcore.reftypes.Student"
+		p:scores-ref="scores" />
 </beans>
