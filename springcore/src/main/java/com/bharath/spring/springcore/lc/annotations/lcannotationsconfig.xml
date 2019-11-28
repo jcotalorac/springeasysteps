@@ -10,6 +10,5 @@
 
 	<bean class="com.bharath.spring.springcore.lc.annotations.Patient"
 		name="patient" p:id="123" />
-	<bean
-		class="org.springframework.context.annotation.CommonAnnotationBeanPostProcessor" />
+	<context:annotation-config />
 </beans>
