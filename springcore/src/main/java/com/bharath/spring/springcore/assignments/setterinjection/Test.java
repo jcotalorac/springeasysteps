@@ -1,4 +1,4 @@
-package com.bharath.spring.springcore.assignment;
+package com.bharath.spring.springcore.assignments.setterinjection;
 
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
@@ -7,7 +7,7 @@ public class Test {
 
 	public static void main(String[] args) {
 		ApplicationContext context = new ClassPathXmlApplicationContext(
-				"com/bharath/spring/springcore/assignment/assignmentconfig.xml");
+				"com/bharath/spring/springcore/assignments/setterinjection/setterinjectionconfig.xml");
 		ShoppingCart shoopingCart = (ShoppingCart) context.getBean("shoppingCart");
 		System.out.println(shoopingCart);
 

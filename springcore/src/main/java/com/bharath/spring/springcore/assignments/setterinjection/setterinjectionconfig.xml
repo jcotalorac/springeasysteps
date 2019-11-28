@@ -9,10 +9,10 @@
 	http://www.springframework.org/schema/context/spring-context.xsd">
 
 	<bean name="item"
-		class="com.bharath.spring.springcore.assignment.Item" p:id="6"
+		class="com.bharath.spring.springcore.assignments.setterinjection.Item" p:id="6"
 		p:name="Product Name" p:price="666.66" p:quantity="66" />
 	<bean name="shoppingCart"
-		class="com.bharath.spring.springcore.assignment.ShoppingCart">
+		class="com.bharath.spring.springcore.assignments.setterinjection.ShoppingCart">
 		<property name="item">
 			<ref bean="item" />
 		</property>

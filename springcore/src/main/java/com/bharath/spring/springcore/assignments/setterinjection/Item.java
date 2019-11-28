@@ -1,4 +1,4 @@
-package com.bharath.spring.springcore.assignment;
+package com.bharath.spring.springcore.assignments.setterinjection;
 
 public class Item {
 
