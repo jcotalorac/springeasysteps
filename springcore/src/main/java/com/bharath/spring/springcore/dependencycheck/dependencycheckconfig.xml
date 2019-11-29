@@ -10,6 +10,6 @@
 
 	<bean
 		class="com.bharath.spring.springcore.dependencycheck.Prescription"
-		name="prescription" />
+		name="prescription" p:id="666"/>
 	<bean class="org.springframework.beans.factory.annotation.RequiredAnnotationBeanPostProcessor"/>
 </beans>
