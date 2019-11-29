@@ -9,7 +9,7 @@
 	http://www.springframework.org/schema/context/spring-context.xsd">
 
 	<bean class="com.bharath.spring.springcore.innerbeans.Employee"
-		name="employee" p:id="666">
+		name="employee" p:id="666" scope="prototype">
 		<property name="address">
 			<bean class="com.bharath.spring.springcore.innerbeans.Address"
 				p:hno="999" p:street="Mira Mesa Blvd" p:city="San Diego">
