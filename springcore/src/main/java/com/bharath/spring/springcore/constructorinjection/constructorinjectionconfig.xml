@@ -9,15 +9,12 @@
 	http://www.springframework.org/schema/context/spring-context.xsd">
 
 	<bean
-		class="com.bharath.spring.springcore.constructorinjection.Address" name="address"
-		p:hno="123" p:street="mira mesa" p:city="san diego" />
+		class="com.bharath.spring.springcore.constructorinjection.Address"
+		name="address" p:hno="123" p:street="mira mesa" p:city="san diego" />
 	<bean
-		class="com.bharath.spring.springcore.constructorinjection.Employee" name="employee">
-		<constructor-arg>
-			<value>456</value>
-		</constructor-arg>
-		<constructor-arg>
-			<ref bean="address" />
-		</constructor-arg>
+		class="com.bharath.spring.springcore.constructorinjection.Employee"
+		name="employee">
+		<constructor-arg value="456" />
+		<constructor-arg ref="address" />
 	</bean>
 </beans>
