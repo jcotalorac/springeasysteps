@@ -12,10 +12,6 @@
 	<bean
 		class="com.bharath.spring.springcoreadvanced.autowiring.Address"
 		name="address" p:hno="123" p:street="mira mesa" p:city="san diego" />
-		
-	<bean
-		class="com.bharath.spring.springcoreadvanced.autowiring.Address"
-		name="address1" p:hno="123" p:street="mira mesa" p:city="san diego" />
 	<bean
 		class="com.bharath.spring.springcoreadvanced.autowiring.Employee"
 		name="employee" autowire="byType" />
