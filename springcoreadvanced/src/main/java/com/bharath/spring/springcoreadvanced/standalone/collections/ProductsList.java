@@ -13,4 +13,9 @@ public class ProductsList {
 	public void setProductNames(List<String> productNames) {
 		this.productNames = productNames;
 	}
+
+	@Override
+	public String toString() {
+		return "ProductsList [productNames=" + productNames + "]";
+	}
 }

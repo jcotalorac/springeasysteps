@@ -10,5 +10,17 @@
 	http://www.springframework.org/schema/util
 	http://www.springframework.org/schema/util/spring-util.xsd">
 
-	<util:list list-class="java.util.LinkedList"></util:list>
+	<util:list list-class="java.util.LinkedList"
+		id="productsNames">
+		<value>Mac Book</value>
+		<value>Iphone</value>
+	</util:list>
+
+	<bean
+		class="com.bharath.spring.springcoreadvanced.standalone.collections.ProductsList"
+		name="productsList">
+		<property name="productNames">
+			<ref bean="productsNames" />
+		</property>
+	</bean>
 </beans>
