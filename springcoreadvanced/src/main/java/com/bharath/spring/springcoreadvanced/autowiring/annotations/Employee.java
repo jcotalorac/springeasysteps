@@ -5,7 +5,7 @@ import org.springframework.beans.factory.annotation.Qualifier;
 
 public class Employee {
 
-	@Autowired(required = false)
+	@Autowired
 	@Qualifier("address789")
 	private Address address;
 
