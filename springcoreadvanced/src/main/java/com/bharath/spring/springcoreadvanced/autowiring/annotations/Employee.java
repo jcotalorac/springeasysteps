@@ -4,9 +4,9 @@ import org.springframework.beans.factory.annotation.Autowired;
 
 public class Employee {
 
+	@Autowired
 	private Address address;
 
-	@Autowired
 	public Employee(Address address) {
 		super();
 		this.address = address;
