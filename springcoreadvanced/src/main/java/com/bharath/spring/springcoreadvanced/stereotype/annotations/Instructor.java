@@ -13,7 +13,7 @@ public class Instructor {
 
 	@Value("#{T(java.lang.Integer).MIN_VALUE}")
 	private int id = 15;
-	@Value("Bharath Thippireddy")
+	@Value("#{'Bharath Thippireddy'}")
 	private String name = "John";
 	@Value("#{topics}")
 	private List<String> topics;
