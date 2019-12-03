@@ -14,5 +14,10 @@
 
 	<bean
 		class="com.bharath.spring.springcoreadvanced.injecting.interfaces.OrderDAOImpl"
-		name="dao"></bean>
+		name="dao" />
+	<bean
+		class="com.bharath.spring.springcoreadvanced.injecting.interfaces.OrderBOImpl"
+		name="bo">
+		<property name="dao" ref="dao" />
+	</bean>
 </beans>
