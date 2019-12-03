@@ -16,6 +16,7 @@ public class Instructor {
 	private String name = "John";
 	@Value("#{topics}")
 	private List<String> topics;
+	private Profile profile;
 
 	public int getId() {
 		return id;
@@ -39,6 +40,14 @@ public class Instructor {
 
 	public void setTopics(List<String> topics) {
 		this.topics = topics;
+	}
+
+	public Profile getProfile() {
+		return profile;
+	}
+
+	public void setProfile(Profile profile) {
+		this.profile = profile;
 	}
 
 	@Override
