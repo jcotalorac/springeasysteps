@@ -9,9 +9,9 @@ import org.springframework.stereotype.Component;
 public class Instructor {
 
 	@Value("10")
-	private int id;
+	private int id = 15;
 	@Value("Bharath Thippireddy")
-	private String name;
+	private String name = "John";
 
 	public int getId() {
 		return id;
