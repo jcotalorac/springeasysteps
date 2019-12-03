@@ -1,5 +1,7 @@
 package com.bharath.spring.springcoreadvanced.stereotype.annotations;
 
+import java.util.List;
+
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Component;
@@ -12,6 +14,7 @@ public class Instructor {
 	private int id = 15;
 	@Value("Bharath Thippireddy")
 	private String name = "John";
+	private List<String> topics;
 
 	public int getId() {
 		return id;
@@ -27,6 +30,14 @@ public class Instructor {
 
 	public void setName(String name) {
 		this.name = name;
+	}
+
+	public List<String> getTopics() {
+		return topics;
+	}
+
+	public void setTopics(List<String> topics) {
+		this.topics = topics;
 	}
 
 	@Override
