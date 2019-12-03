@@ -14,6 +14,7 @@ public class Instructor {
 	private int id = 15;
 	@Value("Bharath Thippireddy")
 	private String name = "John";
+	@Value("#{topics}")
 	private List<String> topics;
 
 	public int getId() {
@@ -42,6 +43,6 @@ public class Instructor {
 
 	@Override
 	public String toString() {
-		return "Instructor [id=" + id + ", name=" + name + "]";
+		return "Instructor [id=" + id + ", name=" + name + ", topics=" + topics + "]";
 	}
 }
