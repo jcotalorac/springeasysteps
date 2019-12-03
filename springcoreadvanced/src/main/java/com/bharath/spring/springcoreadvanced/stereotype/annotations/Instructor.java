@@ -11,7 +11,7 @@ import org.springframework.stereotype.Component;
 @Scope("prototype")
 public class Instructor {
 
-	@Value("#{new Integer(88)}")
+	@Value("#{T(java.lang.Integer).MIN_VALUE}")
 	private int id = 15;
 	@Value("Bharath Thippireddy")
 	private String name = "John";
