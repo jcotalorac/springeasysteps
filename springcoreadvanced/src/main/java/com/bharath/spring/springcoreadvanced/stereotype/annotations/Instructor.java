@@ -1,5 +1,8 @@
 package com.bharath.spring.springcoreadvanced.stereotype.annotations;
 
+import org.springframework.stereotype.Component;
+
+@Component
 public class Instructor {
 
 	private int id;
