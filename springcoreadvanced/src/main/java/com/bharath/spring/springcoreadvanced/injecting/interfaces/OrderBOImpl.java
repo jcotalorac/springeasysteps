@@ -3,7 +3,7 @@ package com.bharath.spring.springcoreadvanced.injecting.interfaces;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
-@Component
+@Component("bo")
 public class OrderBOImpl implements OrderBO {
 
 	@Autowired
