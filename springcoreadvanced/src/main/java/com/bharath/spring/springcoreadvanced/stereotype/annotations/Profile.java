@@ -1,8 +1,14 @@
 package com.bharath.spring.springcoreadvanced.stereotype.annotations;
 
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.stereotype.Component;
+
+@Component
 public class Profile {
 
+	@Value("Java Architect and Instructor")
 	private String title;
+	@Value("Vivekananda Consulting")
 	private String company;
 
 	public String getTitle() {
