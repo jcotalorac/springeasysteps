@@ -1,5 +1,8 @@
 package com.bharath.spring.springcoreadvanced.injecting.interfaces;
 
+import org.springframework.stereotype.Component;
+
+@Component
 public class OrderBOImpl implements OrderBO {
 
 	private OrderDAO dao;
