@@ -4,6 +4,7 @@ import org.springframework.jdbc.core.JdbcTemplate;
 
 import com.bharath.spring.springjdbc.employee.dao.EmployeeDao;
 import com.bharath.spring.springjdbc.employee.dto.Employee;
+import com.bharath.spring.springjdbc.employee.rowmapper.EmployeeRowMapper;
 
 public class EmployeeDaoImpl implements EmployeeDao {
 
@@ -40,7 +41,10 @@ public class EmployeeDaoImpl implements EmployeeDao {
 
 	@Override
 	public Employee read(int id) {
-		return null;
+		String sql = "select * from employee where id=?";
+		EmployeeRowMapper employeeRowMapper = new EmployeeRowMapper();
+		Employee employee = jdbcTemplate.queryForObject(sql, employeeRowMapper, id);
+		return employee;
 	}
 
 }
