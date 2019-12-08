@@ -1,5 +1,7 @@
 package com.bharath.spring.springjdbc.employee.test;
 
+import java.util.List;
+
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 import org.springframework.jdbc.core.JdbcTemplate;
@@ -21,8 +23,9 @@ public class Test {
 //		int result = employeeDao.create(employee);
 //		int result = employeeDao.update(employee);
 //		int result = employeeDao.delete(1);
-		Employee employee = employeeDao.read(2);
-		System.out.println("Employee record: " + employee);
+//		Employee employee = employeeDao.read(2);
+		List<Employee> employees = employeeDao.read();
+		System.out.println("Employee record: " + employees);
 
 	}
 
