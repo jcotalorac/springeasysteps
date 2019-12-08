@@ -51,8 +51,10 @@ public class EmployeeDaoImpl implements EmployeeDao {
 
 	@Override
 	public List<Employee> read() {
-		// TODO Auto-generated method stub
-		return null;
+		String sql = "select * from employee";
+		EmployeeRowMapper employeeRowMapper = new EmployeeRowMapper();
+		List<Employee> employees = jdbcTemplate.query(sql, employeeRowMapper);
+		return employees;
 	}
 
 }
