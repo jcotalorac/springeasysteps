@@ -1,5 +1,8 @@
 package com.bharath.spring.springorm.entity;
 
+import javax.persistence.Entity;
+
+@Entity
 public class Product {
 
 	private int id;
