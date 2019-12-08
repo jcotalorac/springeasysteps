@@ -14,14 +14,15 @@ public class Test {
 		ApplicationContext context = new ClassPathXmlApplicationContext(
 				"com/bharath/spring/springjdbc/employee/test/jdbcconfig.xml");
 		EmployeeDao employeeDao = (EmployeeDao) context.getBean("employeeDao");
-		Employee employee = new Employee();
+		/*Employee employee = new Employee();
 		employee.setId(2);
 		employee.setFirstName("Bob");
-		employee.setLastName("Ferguson");
+		employee.setLastName("Ferguson");*/
 //		int result = employeeDao.create(employee);
 //		int result = employeeDao.update(employee);
-		int result = employeeDao.delete(1);
-		System.out.println("Number of records deleted are: " + result);
+//		int result = employeeDao.delete(1);
+		Employee employee = employeeDao.read(2);
+		System.out.println("Employee record: " + employee);
 
 	}
 
