@@ -24,4 +24,9 @@ public class EmployeeDaoImpl implements EmployeeDao {
 		return result;
 	}
 
+	@Override
+	public int update(Employee employee) {
+		return 0;
+	}
+
 }
