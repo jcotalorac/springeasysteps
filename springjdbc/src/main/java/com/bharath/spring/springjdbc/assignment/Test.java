@@ -20,13 +20,13 @@ public class Test {
 		PassengerDao passengerDao = (PassengerDao) context.getBean("passengerDao");
 		Passenger passenger = new Passenger();
 		passenger.setId(1);
-		passenger.setFirstName("Devil");
-		passenger.setLastName("Devil");
-		int result = passengerDao.create(passenger);
-//		int result = passengerDao.update(passenger);
+		passenger.setFirstName("Devila");
+		passenger.setLastName("Devila");
+//		int result = passengerDao.create(passenger);
+		int result = passengerDao.update(passenger);
 //		int result = passengerDao.delete(1);
 //		Passenger passenger = passengerDao.read(2);
-		System.out.println("Records inserted: " + result);
+		System.out.println("Records updated: " + result);
 
 	}
 
