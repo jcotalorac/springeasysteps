@@ -33,7 +33,9 @@ public class EmployeeDaoImpl implements EmployeeDao {
 
 	@Override
 	public int delete(int id) {
-		return 0;
+		String sql = "delete from where id=?";
+		int result = jdbcTemplate.update(sql, id);
+		return result;
 	}
 
 }
