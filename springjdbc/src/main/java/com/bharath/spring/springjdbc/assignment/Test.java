@@ -23,10 +23,10 @@ public class Test {
 		passenger.setFirstName("Devila");
 		passenger.setLastName("Devila");
 //		int result = passengerDao.create(passenger);
-		int result = passengerDao.update(passenger);
-//		int result = passengerDao.delete(1);
+//		int result = passengerDao.update(passenger);
+		int result = passengerDao.delete(1);
 //		Passenger passenger = passengerDao.read(2);
-		System.out.println("Records updated: " + result);
+		System.out.println("Records deleted: " + result);
 
 	}
 
