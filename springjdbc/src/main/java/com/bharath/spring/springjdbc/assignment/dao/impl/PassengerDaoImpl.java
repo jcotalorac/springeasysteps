@@ -30,19 +30,19 @@ public class PassengerDaoImpl implements PassengerDao {
 
 	@Override
 	public int update(Passenger passenger) {
-		String sql = "update passenger set firstname = ?, lastname = ? where id = ?)";
+		String sql = "update passenger set firstname = ?, lastname = ? where id = ?";
 		return jdbcTemplate.update(sql, passenger.getFirstName(), passenger.getLastName(), passenger.getId());
 	}
 
 	@Override
 	public int delete(int id) {
-		String sql = "delete passenger where id = ?)";
+		String sql = "delete passenger where id = ?";
 		return jdbcTemplate.update(sql, id);
 	}
 
 	@Override
 	public Passenger read(int id) {
-		String sql = "select * from passenger where id = ?)";
+		String sql = "select * from passenger where id = ?";
 		RowMapperPassenger rowMapper = new RowMapperPassenger();
 		return jdbcTemplate.queryForObject(sql, rowMapper, id);
 	}
