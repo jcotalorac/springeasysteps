@@ -1,5 +1,7 @@
 package com.bharath.spring.springjdbc.employee.dao.impl;
 
+import java.util.List;
+
 import org.springframework.jdbc.core.JdbcTemplate;
 
 import com.bharath.spring.springjdbc.employee.dao.EmployeeDao;
@@ -45,6 +47,12 @@ public class EmployeeDaoImpl implements EmployeeDao {
 		EmployeeRowMapper employeeRowMapper = new EmployeeRowMapper();
 		Employee employee = jdbcTemplate.queryForObject(sql, employeeRowMapper, id);
 		return employee;
+	}
+
+	@Override
+	public List<Employee> read() {
+		// TODO Auto-generated method stub
+		return null;
 	}
 
 }
