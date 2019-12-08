@@ -11,8 +11,11 @@ public class EmployeeRowMapper implements RowMapper<Employee> {
 
 	@Override
 	public Employee mapRow(ResultSet rs, int rowNum) throws SQLException {
-		// TODO Auto-generated method stub
-		return null;
+		Employee employee = new Employee();
+		employee.setId(rs.getInt(1));
+		employee.setFirstName(rs.getString(2));
+		employee.setLastName(rs.getString(3));
+		return employee;
 	}
 
 }
