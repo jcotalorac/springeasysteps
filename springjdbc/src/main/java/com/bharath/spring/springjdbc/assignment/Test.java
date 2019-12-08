@@ -18,15 +18,15 @@ public class Test {
 		ApplicationContext context = new ClassPathXmlApplicationContext(
 				"com/bharath/spring/springjdbc/assignment/jdbcconfig.xml");
 		PassengerDao passengerDao = (PassengerDao) context.getBean("passengerDao");
-		Passenger passenger = new Passenger();
+		/*Passenger passenger = new Passenger();
 		passenger.setId(1);
 		passenger.setFirstName("Devila");
-		passenger.setLastName("Devila");
+		passenger.setLastName("Devila");*/
 //		int result = passengerDao.create(passenger);
 //		int result = passengerDao.update(passenger);
-		int result = passengerDao.delete(1);
-//		Passenger passenger = passengerDao.read(2);
-		System.out.println("Records deleted: " + result);
+//		int result = passengerDao.delete(1);
+		Passenger passenger = passengerDao.read(1);
+		System.out.println("Passenger retrieved: " + passenger);
 
 	}
 
