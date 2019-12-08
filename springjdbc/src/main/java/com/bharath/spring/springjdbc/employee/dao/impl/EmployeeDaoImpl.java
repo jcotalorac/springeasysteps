@@ -38,4 +38,9 @@ public class EmployeeDaoImpl implements EmployeeDao {
 		return result;
 	}
 
+	@Override
+	public Employee read(int id) {
+		return null;
+	}
+
 }
