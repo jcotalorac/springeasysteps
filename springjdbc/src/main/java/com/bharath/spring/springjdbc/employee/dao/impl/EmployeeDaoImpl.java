@@ -31,4 +31,9 @@ public class EmployeeDaoImpl implements EmployeeDao {
 		return result;
 	}
 
+	@Override
+	public int delete(int id) {
+		return 0;
+	}
+
 }
