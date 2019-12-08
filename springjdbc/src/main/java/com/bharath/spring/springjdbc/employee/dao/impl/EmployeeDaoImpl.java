@@ -7,20 +7,20 @@ import com.bharath.spring.springjdbc.employee.dto.Employee;
 
 public class EmployeeDaoImpl implements EmployeeDao {
 
-	private JdbcTemplate jcbcTemplate;
+	private JdbcTemplate jdbcTemplate;
 
-	public JdbcTemplate getJcbcTemplate() {
-		return jcbcTemplate;
+	public JdbcTemplate getJdbcTemplate() {
+		return jdbcTemplate;
 	}
 
-	public void setJcbcTemplate(JdbcTemplate jcbcTemplate) {
-		this.jcbcTemplate = jcbcTemplate;
+	public void setJdbcTemplate(JdbcTemplate jdbcTemplate) {
+		this.jdbcTemplate = jdbcTemplate;
 	}
 
 	@Override
 	public int create(Employee employee) {
 		String sql = "insert into employee values(?, ?, ?)";
-		int result = jcbcTemplate.update(sql, employee.getId(), employee.getFirstName(), employee.getLastName());
+		int result = jdbcTemplate.update(sql, employee.getId(), employee.getFirstName(), employee.getLastName());
 		return result;
 	}
 
