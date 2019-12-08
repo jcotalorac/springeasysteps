@@ -10,9 +10,7 @@ public class Test {
 
 		ApplicationContext context = new ClassPathXmlApplicationContext("com/bharath/spring/springjdbc/jdbcconfig.xml");
 		JdbcTemplate jdbcTemplate = (JdbcTemplate) context.getBean("jdbcTemplate");
-		String sql = "insert into employee values(?, ?, ?)";
-		int result = jdbcTemplate.update(sql, new Integer(1), "Bharath", "Thippireddy");
-		System.out.println("Number of records inserted are " + result);
+		
 	}
 
 }
