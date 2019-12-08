@@ -1,5 +1,6 @@
 package com.bharath.spring.springorm.entity;
 
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.Table;
@@ -9,9 +10,13 @@ import javax.persistence.Table;
 public class Product {
 
 	@Id
+	@Column(name = "id")
 	private int id;
+	@Column(name = "name")
 	private String name;
+	@Column(name = "description")
 	private String desc;
+	@Column(name = "price")
 	private double price;
 
 	public int getId() {
