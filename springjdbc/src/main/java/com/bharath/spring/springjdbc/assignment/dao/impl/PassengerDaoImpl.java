@@ -36,7 +36,7 @@ public class PassengerDaoImpl implements PassengerDao {
 
 	@Override
 	public int delete(int id) {
-		String sql = "delete passenger where id = ?";
+		String sql = "delete from passenger where id = ?";
 		return jdbcTemplate.update(sql, id);
 	}
 
