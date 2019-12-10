@@ -14,6 +14,14 @@ public class ProductDaoImpl implements ProductDao {
 	@Autowired
 	private HibernateTemplate hibernateTemplate;
 	
+	public HibernateTemplate getHibernateTemplate() {
+		return hibernateTemplate;
+	}
+
+	public void setHibernateTemplate(HibernateTemplate hibernateTemplate) {
+		this.hibernateTemplate = hibernateTemplate;
+	}
+
 	@Override
 	@Transactional
 	public int create(Product product) {
