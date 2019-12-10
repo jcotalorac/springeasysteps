@@ -8,7 +8,7 @@ import org.springframework.transaction.annotation.Transactional;
 import com.bharath.spring.springorm.product.dao.ProductDao;
 import com.bharath.spring.springorm.product.entity.Product;
 
-@Component
+@Component("productDao")
 public class ProductDaoImpl implements ProductDao {
 
 	@Autowired
