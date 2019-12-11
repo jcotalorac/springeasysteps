@@ -1,5 +1,7 @@
 package com.bharath.spring.springorm.product.dao;
 
+import java.util.List;
+
 import com.bharath.spring.springorm.product.entity.Product;
 
 public interface ProductDao {
@@ -11,4 +13,6 @@ public interface ProductDao {
 	void delete(Product product);
 	
 	Product find(int id);
+	
+	List<Product> findAll();
 }
