@@ -1,5 +1,6 @@
 package com.bharath.spring.springorm.assignment.dao.impl;
 
+import java.io.Serializable;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -25,8 +26,8 @@ public class PassengerDaoImpl implements PassengerDao {
 
 	@Override
 	public int create(Passenger passenger) {
-		// TODO Auto-generated method stub
-		return 0;
+		Integer result = (Integer) hibernateTemplate.save(passenger);
+		return result;
 	}
 
 	@Override
