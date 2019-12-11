@@ -29,4 +29,22 @@
 		</property>
 	</bean>
 
+	<bean
+		class="org.springframework.orm.hibernate5.LocalSessionFactoryBean"
+		name="sessionFact">
+		<property name="dataSource" ref="dS" />
+		<property name="hibernateProperties">
+			<props>
+				<prop key="hibernate.dialect">org.hibernate.dialect.MySQLDialect</prop>
+				<prop key="hibernate.show_sql">true</prop>
+			</props>
+		</property>
+		<property name="annotatedClasses">
+			<list>
+				<value>com.bharath.spring.springorm.assignment.entity.Passenger
+				</value>
+			</list>
+		</property>
+	</bean>
+
 </beans>
