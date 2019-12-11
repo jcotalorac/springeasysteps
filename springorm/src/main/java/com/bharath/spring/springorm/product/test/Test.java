@@ -18,7 +18,8 @@ public class Test {
 		product.setDesc("It's awesome!!");
 		product.setPrice(800);
 //		productDao.create(product);
-		productDao.update(product);
+//		productDao.update(product);
+		productDao.delete(product);
 	}
 
 }
