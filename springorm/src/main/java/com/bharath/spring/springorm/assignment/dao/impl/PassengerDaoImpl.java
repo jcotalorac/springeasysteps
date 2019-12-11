@@ -1,11 +1,11 @@
 package com.bharath.spring.springorm.assignment.dao.impl;
 
-import java.io.Serializable;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.orm.hibernate5.HibernateTemplate;
 import org.springframework.stereotype.Component;
+import org.springframework.transaction.annotation.Transactional;
 
 import com.bharath.spring.springorm.assignment.dao.PassengerDao;
 import com.bharath.spring.springorm.assignment.entity.Passenger;
@@ -25,6 +25,7 @@ public class PassengerDaoImpl implements PassengerDao {
 	}
 
 	@Override
+	@Transactional
 	public int create(Passenger passenger) {
 		Integer result = (Integer) hibernateTemplate.save(passenger);
 		return result;
