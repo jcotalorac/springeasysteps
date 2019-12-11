@@ -47,4 +47,8 @@
 		</property>
 	</bean>
 
+	<bean class="org.springframework.orm.hibernate5.HibernateTemplate" name="hibernateTemplate">
+		<property name="sessionFactory" ref="sessionFact" />
+	</bean>
+
 </beans>
