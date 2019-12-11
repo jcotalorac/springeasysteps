@@ -5,4 +5,6 @@ import com.bharath.spring.springorm.product.entity.Product;
 public interface ProductDao {
 
 	int create(Product product);
+	
+	void update(Product product);
 }

@@ -13,7 +13,7 @@ public class ProductDaoImpl implements ProductDao {
 
 	@Autowired
 	private HibernateTemplate hibernateTemplate;
-	
+
 	public HibernateTemplate getHibernateTemplate() {
 		return hibernateTemplate;
 	}
@@ -27,6 +27,12 @@ public class ProductDaoImpl implements ProductDao {
 	public int create(Product product) {
 		Integer result = (Integer) hibernateTemplate.save(product);
 		return result;
+	}
+
+	@Override
+	@Transactional
+	public void update(Product product) {
+		hibernateTemplate.update(product);
 	}
 
 }
