@@ -2,6 +2,7 @@ package com.bharath.spring.springorm.assignment.dao.impl;
 
 import java.util.List;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.orm.hibernate5.HibernateTemplate;
 import org.springframework.stereotype.Component;
 
@@ -11,6 +12,7 @@ import com.bharath.spring.springorm.assignment.entity.Passenger;
 @Component("passengerDao")
 public class PassengerDaoImpl implements PassengerDao {
 
+	@Autowired
 	private HibernateTemplate hibernateTemplate;
 	
 	public HibernateTemplate getHibernateTemplate() {
