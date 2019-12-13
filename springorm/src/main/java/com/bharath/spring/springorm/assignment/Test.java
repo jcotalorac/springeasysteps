@@ -13,10 +13,11 @@ public class Test {
 		PassengerDao passengerDao = (PassengerDao) context.getBean("passengerDao");
 		Passenger passenger = new Passenger();
 		passenger.setId(1);
-		passenger.setFirstName("firstname");
-		passenger.setLastName("lastname");
-		int result = passengerDao.create(passenger);
-		System.out.println("Created passengers: " + result);
+		passenger.setFirstName("namefirst");
+		passenger.setLastName("namelast");
+		passengerDao.update(passenger);
+//		int result = passengerDao.create(passenger);
+//		System.out.println("Created passengers: " + result);
 	}
 
 }
