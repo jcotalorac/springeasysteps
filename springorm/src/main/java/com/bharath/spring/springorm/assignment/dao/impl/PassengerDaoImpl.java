@@ -51,7 +51,7 @@ public class PassengerDaoImpl implements PassengerDao {
 
 	@Override
 	public List<Passenger> findAll() {
-		// TODO Auto-generated method stub
-		return null;
+		List<Passenger> passengers = hibernateTemplate.loadAll(Passenger.class);
+		return passengers;
 	}
 }
