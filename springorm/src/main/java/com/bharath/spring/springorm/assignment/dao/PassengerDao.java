@@ -8,7 +8,7 @@ public interface PassengerDao {
 
 	int create(Passenger passenger);
 	
-	int update(Passenger passenger);
+	void update(Passenger passenger);
 	
 	int delete(int id);
 	

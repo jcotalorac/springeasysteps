@@ -32,9 +32,8 @@ public class PassengerDaoImpl implements PassengerDao {
 	}
 
 	@Override
-	public int update(Passenger passenger) {
-		// TODO Auto-generated method stub
-		return 0;
+	public void update(Passenger passenger) {
+		hibernateTemplate.update(passenger);
 	}
 
 	@Override
