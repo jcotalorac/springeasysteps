@@ -1,5 +1,7 @@
 package com.bharath.spring.springorm.assignment;
 
+import java.util.List;
+
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
@@ -19,8 +21,9 @@ public class Test {
 //		passengerDao.update(passenger);
 //		int result = passengerDao.create(passenger);
 //		System.out.println("Created passengers: " + result);
-		Passenger passenger = passengerDao.find(1);
-		System.out.println("Passenger found: " + passenger);
+//		Passenger passenger = passengerDao.find(1);
+		List<Passenger> passengers = passengerDao.findAll();
+		System.out.println("Passenger found: " + passengers);
 	}
 
 }
