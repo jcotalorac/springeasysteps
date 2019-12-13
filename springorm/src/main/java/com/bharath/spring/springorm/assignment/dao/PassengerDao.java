@@ -10,7 +10,7 @@ public interface PassengerDao {
 	
 	void update(Passenger passenger);
 	
-	int delete(int id);
+	void delete(Passenger passenger);
 	
 	Passenger find(int id);
 	

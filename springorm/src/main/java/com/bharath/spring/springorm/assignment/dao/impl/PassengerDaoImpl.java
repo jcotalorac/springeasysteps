@@ -38,9 +38,8 @@ public class PassengerDaoImpl implements PassengerDao {
 	}
 
 	@Override
-	public int delete(int id) {
-		// TODO Auto-generated method stub
-		return 0;
+	public void delete(Passenger passenger) {
+		hibernateTemplate.delete(passenger);
 	}
 
 	@Override
