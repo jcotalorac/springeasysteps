@@ -11,14 +11,16 @@ public class Test {
 	public static void main(String[] args) {
 		ApplicationContext context = new ClassPathXmlApplicationContext("com/bharath/spring/springorm/assignment/ormconfig.xml");
 		PassengerDao passengerDao = (PassengerDao) context.getBean("passengerDao");
-		Passenger passenger = new Passenger();
-		passenger.setId(1);
-		passenger.setFirstName("namefirst");
-		passenger.setLastName("namelast");
-		passengerDao.delete(passenger);
+//		Passenger passenger = new Passenger();
+//		passenger.setId(1);
+//		passenger.setFirstName("namefirst");
+//		passenger.setLastName("namelast");
+		//passengerDao.delete(passenger);
 //		passengerDao.update(passenger);
 //		int result = passengerDao.create(passenger);
 //		System.out.println("Created passengers: " + result);
+		Passenger passenger = passengerDao.find(1);
+		System.out.println("Passenger found: " + passenger);
 	}
 
 }
