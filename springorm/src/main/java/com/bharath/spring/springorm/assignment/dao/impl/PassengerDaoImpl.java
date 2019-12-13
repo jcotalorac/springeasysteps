@@ -38,6 +38,7 @@ public class PassengerDaoImpl implements PassengerDao {
 	}
 
 	@Override
+	@Transactional
 	public void delete(Passenger passenger) {
 		hibernateTemplate.delete(passenger);
 	}
