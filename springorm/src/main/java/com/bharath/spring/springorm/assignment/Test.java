@@ -15,7 +15,8 @@ public class Test {
 		passenger.setId(1);
 		passenger.setFirstName("namefirst");
 		passenger.setLastName("namelast");
-		passengerDao.update(passenger);
+		passengerDao.delete(passenger);
+//		passengerDao.update(passenger);
 //		int result = passengerDao.create(passenger);
 //		System.out.println("Created passengers: " + result);
 	}
