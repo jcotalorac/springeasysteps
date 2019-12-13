@@ -32,6 +32,7 @@ public class PassengerDaoImpl implements PassengerDao {
 	}
 
 	@Override
+	@Transactional
 	public void update(Passenger passenger) {
 		hibernateTemplate.update(passenger);
 	}
