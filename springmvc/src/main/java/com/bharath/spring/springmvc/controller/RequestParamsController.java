@@ -11,7 +11,11 @@ public class RequestParamsController {
 	@RequestMapping("showData")
 	public ModelAndView showData(@RequestParam("id") int id, @RequestParam 
 			("name") String name, @RequestParam("salary") double salary) {
-		ModelAndView modelAndView = new ModelAndView();
+		
+		System.out.println("Id " + id);
+		System.out.println("Name: " + name);
+		System.out.println("Salary " + salary);
+		ModelAndView modelAndView = new ModelAndView("userReg");
 		return modelAndView;
 	}
 	
