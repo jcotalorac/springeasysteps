@@ -12,11 +12,8 @@ import com.bharath.spring.springmvc.dto.User;
 public class UserController {
 
 	@RequestMapping("registrationPage")
-	public ModelAndView showRegistrationPage() {
-		ModelAndView modelAndView = new ModelAndView();
-		
-		modelAndView.setViewName("userReg");
-		return modelAndView;
+	public String showRegistrationPage() {
+		return "userReg";
 	}
 	
 	@RequestMapping(value = "registerUser", method = RequestMethod.POST)
