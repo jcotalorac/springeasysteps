@@ -15,6 +15,7 @@ public class UserController {
 		return modelAndView;
 	}
 	
+	@RequestMapping("registerUser")
 	public ModelAndView registerUser() {
 		ModelAndView modelAndView = new ModelAndView();
 		return modelAndView;
