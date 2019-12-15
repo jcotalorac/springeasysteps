@@ -14,4 +14,9 @@ public class UserController {
 		modelAndView.setViewName("userReg");
 		return modelAndView;
 	}
+	
+	public ModelAndView registerUser() {
+		ModelAndView modelAndView = new ModelAndView();
+		return modelAndView;
+	}
 }
