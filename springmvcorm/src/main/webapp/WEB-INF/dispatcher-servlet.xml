@@ -32,7 +32,7 @@
 		</property>
 		<property name="annotatedClasses">
 			<list>
-				<value>com.bharath.spring.springorm.product.entity.Product</value>
+				<value>com.bharath.spring.springmvcorm.user.entity.User</value>
 			</list>
 		</property>
 	</bean>
