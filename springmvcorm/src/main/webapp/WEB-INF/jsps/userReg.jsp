@@ -16,7 +16,7 @@
 					id : $("#id").value()
 				},
 				success : function(responseText) {
-
+					$("#errMsg").text(responseText);
 				}
 			});
 		});
