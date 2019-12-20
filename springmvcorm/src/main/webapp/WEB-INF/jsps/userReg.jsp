@@ -10,7 +10,7 @@
 <body>
 	<form action="registerUser" method="post">
 		<pre>
-		Id: <input type="text" name="id"> Name: <input type="text"
+		Id: <input type="text" name="id" id="id"> Name: <input type="text"
 				name="name"> Email: <input type="text" name="email">
 		<input type="submit" name="register">
 		</pre>
