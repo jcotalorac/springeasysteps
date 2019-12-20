@@ -17,6 +17,10 @@
 				},
 				success : function(responseText) {
 					$("#errMsg").text(responseText);
+					
+					if (responseText != "") {
+						$("#id").focus();
+					}
 				}
 			});
 		});
