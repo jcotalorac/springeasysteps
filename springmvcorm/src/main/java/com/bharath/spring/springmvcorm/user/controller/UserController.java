@@ -8,6 +8,8 @@ import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.ResponseBody;
 
 import com.bharath.spring.springmvcorm.user.entity.User;
 import com.bharath.spring.springmvcorm.user.services.UserService;
@@ -43,5 +45,16 @@ public class UserController {
 		List<User> users = service.getUsers();
 		model.addAttribute("users", users);
 		return "displayUsers";
+	}
+	
+	@RequestMapping("validateEmail")
+	public @ResponseBody String validateEmail(@RequestParam("id") int id) {
+		String message = "";
+		User user = service.getUser(id);
+		if (user != null) {
+			message = id + " already exists";
+		}
+		
+		return message;
 	}
 }
