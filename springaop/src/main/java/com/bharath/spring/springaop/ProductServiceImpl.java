@@ -4,8 +4,7 @@ public class ProductServiceImpl implements ProductService {
 
 	@Override
 	public int multiply(int num1, int num2) {
-		// TODO Auto-generated method stub
-		return 0;
+		return num1 * num2;
 	}
 
 }
