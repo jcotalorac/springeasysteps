@@ -3,7 +3,7 @@ package com.bharath.spring.springjavaconfig;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
-@Component
+//@Component
 public class Service {
 
 	@Autowired
@@ -15,6 +15,14 @@ public class Service {
 
 	public void setDao(Dao dao) {
 		this.dao = dao;
+	}
+	
+	public void init() {
+		System.out.println("init()");
+	}
+	
+	public void destroy() {
+		System.out.println("destroy()");
 	}
 	
 	public void save() {
