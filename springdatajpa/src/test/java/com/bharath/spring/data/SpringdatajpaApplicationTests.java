@@ -44,6 +44,8 @@ class SpringdatajpaApplicationTests {
 		System.out.println(productRepository.findByName("Mac"));
 		
 		System.out.println(productRepository.findByPrice(1500d));
+		
+		System.out.println(productRepository.findByNameAndPrice("Mac", 1500d));
 	}
 
 }
