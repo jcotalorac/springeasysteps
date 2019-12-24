@@ -1,5 +1,7 @@
 package com.bharath.spring.data;
 
+import java.util.Optional;
+
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
@@ -23,6 +25,14 @@ class SpringdatajpaApplicationTests {
 		product.setDescription("awesome");
 		product.setPrice(1200d);
 		productRepository.save(product);
+		
+		Optional<Product> optionalProduct = productRepository.findById(1L);
+		if (optionalProduct.isPresent()) {
+			product = optionalProduct.get();
+		} else {
+			product = null;
+		}
+		System.out.println("Product found: " + product);
 	}
 
 }
