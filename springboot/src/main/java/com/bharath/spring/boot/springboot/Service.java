@@ -12,6 +12,7 @@ public class Service {
 	
 	@Autowired
 	public Service(Dao dao) {
+		System.out.println("Service Bean Created");
 		this.dao = dao;
 	}
 	
