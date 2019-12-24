@@ -11,4 +11,6 @@ public interface ProductRepository extends CrudRepository<Product, Long> {
 	List<Product> findByName(String name);
 	
 	List<Product> findByPrice(double price);
+	
+	List<Product> findByNameAndPrice(String name, double price);
 }
