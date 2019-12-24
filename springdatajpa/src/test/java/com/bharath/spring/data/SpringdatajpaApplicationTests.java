@@ -1,5 +1,6 @@
 package com.bharath.spring.data;
 
+import java.util.List;
 import java.util.Optional;
 
 import org.junit.jupiter.api.Test;
@@ -33,6 +34,10 @@ class SpringdatajpaApplicationTests {
 			product = null;
 		}
 		System.out.println("Product found: " + product);
+		
+		product.setPrice(1500d);
+		
+		productRepository.save(product);
 	}
 
 }
