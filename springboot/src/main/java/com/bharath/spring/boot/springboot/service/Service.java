@@ -1,4 +1,4 @@
-package com.bharath.spring.boot.springboot;
+package com.bharath.spring.boot.springboot.service;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
