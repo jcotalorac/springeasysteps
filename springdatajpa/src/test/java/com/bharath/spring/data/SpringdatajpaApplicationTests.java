@@ -38,6 +38,8 @@ class SpringdatajpaApplicationTests {
 		product.setPrice(1500d);
 		
 		productRepository.save(product);
+		
+		productRepository.findAll().forEach(p->{System.out.println(p.getPrice());});
 	}
 
 }
