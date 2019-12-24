@@ -42,6 +42,8 @@ class SpringdatajpaApplicationTests {
 		productRepository.findAll().forEach(p->{System.out.println(p.getPrice());});
 		
 		System.out.println(productRepository.findByName("Mac"));
+		
+		System.out.println(productRepository.findByPrice(1500d));
 	}
 
 }
