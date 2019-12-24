@@ -40,6 +40,8 @@ class SpringdatajpaApplicationTests {
 		productRepository.save(product);
 		
 		productRepository.findAll().forEach(p->{System.out.println(p.getPrice());});
+		
+		System.out.println(productRepository.findByName("Mac"));
 	}
 
 }
