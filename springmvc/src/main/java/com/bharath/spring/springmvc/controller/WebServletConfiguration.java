@@ -2,9 +2,11 @@ package com.bharath.spring.springmvc.controller;
 
 import javax.servlet.ServletContext;
 import javax.servlet.ServletException;
+import javax.servlet.ServletRegistration;
 
 import org.springframework.web.WebApplicationInitializer;
 import org.springframework.web.context.support.AnnotationConfigWebApplicationContext;
+import org.springframework.web.servlet.DispatcherServlet;
 
 public class WebServletConfiguration implements WebApplicationInitializer {
 
@@ -12,6 +14,10 @@ public class WebServletConfiguration implements WebApplicationInitializer {
 	public void onStartup(ServletContext servletContext) throws ServletException {
 		AnnotationConfigWebApplicationContext webContext = new AnnotationConfigWebApplicationContext();
 		webContext.register(SpringConfig.class);
+		
+		ServletRegistration.Dynamic servlet = servletContext.addServlet("dispatcher", DispatcherServlet.class);
+		servlet.setLoadOnStartup(1);
+		servlet.addMapping("/");
 	}
 
 }
