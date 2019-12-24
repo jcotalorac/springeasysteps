@@ -9,4 +9,6 @@ import com.bharath.spring.data.entities.Product;
 public interface ProductRepository extends CrudRepository<Product, Long> {
 
 	List<Product> findByName(String name);
+	
+	List<Product> findByPrice(String price);
 }
